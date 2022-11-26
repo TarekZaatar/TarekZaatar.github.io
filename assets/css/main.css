@@ -2592,75 +2592,83 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		object-fit: scale-down;
 	}
 
 		.image img {
 			display: block;
+			object-fit: scale-down;
 		}
 
 		.image.left, .image.right {
 			max-width: 40%;
+			object-fit: scale-down;
 		}
 
 			.image.left img, .image.right img {
 				width: 100%;
+				object-fit: scale-down;
 			}
 
 		.image.left {
 			float: left;
 			margin: 0 2rem 2rem 0;
 			top: 0.75rem;
+			object-fit: scale-down;
 		}
 
 		.image.right {
 			float: right;
 			margin: 0 0 2rem 2rem;
 			top: 0.75rem;
+			object-fit: scale-down;
 		}
 
 		.image.fit {
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
-			object-fit: cover;
+			object-fit: scale-down;
 		}
 
 			.image.fit:first-child {
 				margin-top: 0;
-				object-fit: cover;
+				object-fit: scale-down;
 			}
 
 			.image.fit img {
 				width: 100%;
-				object-fit: cover;
+				object-fit: scale-down;
 			}
 
 		.image.main {
 			display: block;
 			margin: 4rem 0;
 			width: 100%;
-			object-fit: cover;
+			object-fit: scale-down;
 		}
 
 			.image.main:first-child {
 
 				margin-top: 0;
-				object-fit: cover;
+				object-fit: scale-down;
 			}
 
 			.image.main img {
 				width: 100%;
-				object-fit: cover;
+				object-fit: scale-down;
 			}
 
 		@media screen and (max-width: 736px) {
 
 			.image.fit {
 				margin: 2rem 0;
+				object-fit: scale-down;
 			}
 
 			.image.main {
 				margin: 2rem 0;
+				object-fit: scale-down;
 			}
 
 		}
@@ -2674,7 +2682,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.2s ease-out;
 			-ms-transition: -ms-transform 0.2s ease-out;
 			transition: transform 0.2s ease-out;
-			object-fit: cover;
+			object-fit: scale-down;
 		}
 
 		a.image:hover img {
